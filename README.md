@@ -5,7 +5,7 @@ Using what I learnt from the earlier versions (JavaScript/Python) I tried again 
 *Still not happy with the style*
 
 ## To-Do
--Finish cpu logic for responding to non-optimal moves
+- Finish cpu logic for responding to non-optimal moves
 ---
 
 ## Features
