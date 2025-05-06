@@ -4,6 +4,19 @@ Using what I learnt from the earlier versions (JavaScript/Python) I tried again 
 
 *Still not happy with the style*
 
+## Preview
+UI preview
+
+https://github.com/user-attachments/assets/9fd0afdb-ba5a-48c5-af60-fb621b2f4311
+
+Hard-Mode Cpu Logic preview
+
+https://github.com/user-attachments/assets/73177d37-0f35-4ba1-a1b2-461e99158300
+
+Demo-Mode preview
+
+https://github.com/user-attachments/assets/0f38b06c-b451-4d7f-98b4-6de334efe7a0
+
 ## To-Do
 - Finish cpu logic for responding to non-optimal moves
 ---
