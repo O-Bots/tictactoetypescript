@@ -1,0 +1,166 @@
+body {
+    background-color: #0d1117;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #e0f7fa;
+}
+.modal  {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+
+    .modal-contents {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        background: #121212;
+        color: #e0f7fa;
+        padding: 15px 10px;
+        border-radius: 5px;
+        border: 2px solid #00ffff;
+        box-shadow: 0 0 20px 2px rgba(0,255,255,0.25), 0 0 0 1px #00ffff;
+        min-width: 250px;
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        gap: 24px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 3px 0;
+            width: 60%;
+            li {
+                margin-bottom: 3px;
+                label {
+                    margin-left: 8px;
+                    color: #e0f7fa;
+                }
+            }
+        }
+
+        button {
+            background: #1a1a1a;
+            color: #00ffff;
+            border: 2px solid #00ffff;
+            border-radius: 6px;
+            padding: 8px 20px;
+            font-size: 1.1em;
+            font-family: inherit;
+            cursor: pointer;
+            margin: 0 8px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 8px 0 #00ffff33;
+        }
+        button:hover, button:focus {
+            background: #00ffff;
+            color: #121212;
+            box-shadow: 0 0 16px 2px #00ffff88;
+        }
+    }
+}
+
+.main_frame {
+    display: inline-block;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+    background: #121212;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4vh;
+        min-height: 45px;
+        background-color: #1f2f34;
+        border-radius: 10px 10px 0 0;
+
+        h1 {
+            font-size: 1.8em;
+            line-height: 1;
+            width: 100%;
+            text-align: center;
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff;
+        }
+    }
+
+    .notification {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3vh;
+        min-height: 40px;
+        background-color: #1a1a1a;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #00ffff;
+
+        h2, #player_one_score, #player_two_score {
+            font-size: 1.4em;
+            line-height: 1;
+            margin: 0 8px;
+            color: #e0f7fa;
+        }
+        #player_one_score {
+            order: -1;
+        }
+        #player_two_score {
+            order: 1;
+        }
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        border-radius: 8px;
+        .frame {
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+            width: fit-content;
+            .grid {
+                justify-content: center;
+                padding: 6px;
+                display: grid;
+                grid-template-columns: repeat(var(--board-size), clamp(120px, min(15vw, 20vh), 180px));
+                grid-template-rows: repeat(var(--board-size), clamp(120px, min(15vw, 20vh), 180px));
+                gap: .5vh;
+                margin: 0 auto;
+            }
+            .cell {
+                display: flex;
+                border: 2px solid #00ffff;
+                border-radius: 8px;
+                justify-content: center;
+                align-items: center;
+                background: #0e1a1f;
+                font-size: 5em;
+                color: #e0f7fa;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s;
+            }
+
+            .cell:hover {
+                background-color: #1f2f34;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

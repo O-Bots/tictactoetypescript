@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-contents" id="modalStart">
+            <ul>
+                <li>
+                    <input type="checkbox" id="demo">
+                    <label for="demo-mode">Demo mode</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="hardMode">
+                    <label for="hard-mode">Hard mode</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="playerFirstMove">
+                    <label for="player_first">First move</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="vsCpu">
+                    <label for="vs_cpu">VS Cpu</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="vsTwitch">
+                    <label for="vs_twitch">VS Twitch</label>
+                </li>
+            </ul>
+            <div>
+                <button class="start-btn">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="main_frame">
+        <header class="title">
+            <h1>This is for the title</h1>
+        </header>
+        <section class="notification">
+            <div id="player_one_score"></div>
+            <h2>This is for notifications</h2>
+            <div id="player_two_score"></div>
+        </section>
+        <div class="container">
+            <div class="frame">
+                <div id="board" class="grid"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
