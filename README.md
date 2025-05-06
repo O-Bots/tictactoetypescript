@@ -3,6 +3,9 @@
 Using what I learnt from the earlier versions (JavaScript/Python) I tried again with TypeScript, SCSS and Jest for testing. Play against another player, the CPU, or watch a demo mode. The game supports variable board sizes and several play modes.
 
 *Still not happy with the style*
+
+## To-Do
+-Finish cpu logic for responding to non-optimal moves
 ---
 
 ## Features
