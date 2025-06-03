@@ -629,6 +629,7 @@ function createBoard(boardSize) {
 }
 ;
 const winCombos = (boardSize) => {
+    const cellPositions = [];
     const rows = [];
     const columns = [];
     const firstDiagonal = [];
@@ -849,7 +850,7 @@ const DEFAULT_PLAYERS = [
 let firstPlayerMoves = [];
 let secondPlayerMoves = [];
 let currentPlayerIndex = 0;
-let boardSize = 3;
+let boardSize = 4;
 let playerFirstMove = false;
 let hardMode = false;
 let vsCpu = false;
@@ -1087,7 +1088,7 @@ function gameOver() {
         }
     });
 }
-gameArea.addEventListener('click', (e) => {
+window.addEventListener('click', (e) => {
 });
 
 

@@ -35,7 +35,7 @@ const DEFAULT_PLAYERS: Player[] = [
 let firstPlayerMoves: CellPosition[] = [];
 let secondPlayerMoves: CellPosition[] = [];
 let currentPlayerIndex: number = 0;
-let boardSize: number = 3;
+let boardSize: number = 4;
 let playerFirstMove: boolean = false
 let hardMode: boolean = false
 let vsCpu: boolean = false
@@ -130,6 +130,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 */
 createBoard(boardSize)
 const { combos, cells } = winCombos(boardSize)
+
 /*
 *Gathers all possible win combinations (rows, columns, diagonals) for a board
 *and returns an object containing an array of the win combinations and the NodeList of cell elements.
@@ -282,7 +283,7 @@ async function gameOver() {
     }
 }
 
-gameArea.addEventListener('click', (e) => {
-
+window.addEventListener('click', (e) => {
     
 });
+

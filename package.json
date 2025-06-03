@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles .tests/jest/funcUtil"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",

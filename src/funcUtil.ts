@@ -32,6 +32,7 @@ function createBoard(boardSize:number) {
 
 const winCombos = (boardSize: number): { combos: Array<CellPositionArray>, cells: NodeListOf<Element> }=> {
 
+    const cellPositions: CellPositionArray = [];
     const rows: Array<CellPositionArray> = [];
     const columns: Array<CellPositionArray> = [];
     const firstDiagonal: CellPositionArray = [];
